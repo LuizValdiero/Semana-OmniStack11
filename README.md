@@ -66,3 +66,48 @@ $ npx create-react-app frontend
 ```
 
 
+#### Tools
+
+- fonts.google.com
+```
+\\Embed font
+@IMPORT
+```
+
+package of icons
+```
+$ npm install react-icons
+```
+```
+// xxx.js
+import { FiLogIn} from 'react-icons/fi';
+```
+- Feather icons
+  
+
+## Router
+
+```
+npm install react-router-dom
+```
+
+### Link
+navegacao pelo component <Link >
+```
+import { Link } from 'rect-router-dom'
+
+```
+
+### Navegacao pelo javascript
+```
+import { useHistory } from 'react-router-dom';
+
+history = useHistory();
+
+history.push('/rota');
+```
+
+## Client http
+```
+npm install axios
+```
