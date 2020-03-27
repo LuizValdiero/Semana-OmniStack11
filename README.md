@@ -58,6 +58,20 @@ Funcionalidades
 - Listar todos os Incidents
 - Entrar em contato com a ONG
 
+
+### Validation
+
+Celebrate
+
+```
+npm install celebrate
+```
+
+```
+const { errors} = require('celebrate');
+app.use(errors());
+```
+
 ## Frontend React
 
 ```
