@@ -16,11 +16,14 @@ routes.post('/sessions', celebrate({
 }), SessionController.create);
 
 routes.get('/ongs', OngController.index);
+
 routes.post('/ongs', celebrate({
     [Segments.BODY]: Joi.object().keys({
         name: Joi.string().required(),
         email: Joi.string().required().email(),
-        whatsapp: Joi.number().required().min(10).max(11),
+        //whatsapp: Joi.custom(validateWhatsapp, 'whatsapp must be greater than 10 and less than 11').number().required(),
+        //whatsapp: Joi.string().required().min(10).max(11).cast('number'),
+        whatsapp: Joi.string().required().min(10).max(11),
         city: Joi.string().required(),
         uf: Joi.string().required().length(2),
     })

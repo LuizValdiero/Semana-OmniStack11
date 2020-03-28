@@ -35,11 +35,16 @@ $ npx knex migrate:make create_ongs
 ```
 update migrations
 ```
-npx knex migration:latest
+$ npx knex migration:latest
 ```
 desfazer ultimo comando npx knex migrate
 ```
-npx knex migrate:rollback
+$ npx knex migrate:rollback
+```
+configuration env
+definida em knexfile.js
+```
+knex(configuration.xxx)
 ```
 
 ### *
@@ -61,16 +66,53 @@ Funcionalidades
 
 ### Validation
 
-Celebrate
+Celebrate https://github.com/arb/celebrate
 
 ```
-npm install celebrate
+$ npm install celebrate
 ```
 
 ```
 const { errors} = require('celebrate');
 app.use(errors());
 ```
+
+### Test
+
+Jest https://github.com/facebook/jest
+
+```
+$ npm install jest -D
+$ npx jest --init
+```
+```
+$ npm test
+```
+
+#### supertest
+fazer testes chamando a api.
+
+```
+$ npm install supertest -D
+```
+
+### gerenciar ambientes
+
+```
+$ npm install cross-env
+```
+example
+```
+"scripts": {
+    "start": "nodemon src/index.js",
+    "test": "cross-env NODE_ENV=test jest"
+},
+```
+acessar a variavel de ambiente
+```
+process.env.NODE_ENV
+```
+
 
 ## Frontend React
 
