@@ -113,6 +113,11 @@ acessar a variavel de ambiente
 process.env.NODE_ENV
 ```
 
+### Autenticacao (nao criptografia)
+JWT
+
+- https://www.youtube.com/watch?v=KKTX1l3sZGk
+- 
 
 ## Frontend React
 
@@ -163,7 +168,74 @@ history = useHistory();
 history.push('/rota');
 ```
 
-## Client http
+#### Client http
 ```
 npm install axios
+```
+
+
+## Mobile
+
+Expo global
+```
+$ npm install -g expo-cli
+```
+
+```
+$ npm init project_name
+```
+
+Expo docs
+
+https://docs.expo.io
+
+
+### Navigation
+
+reactnavigation
+
+https://reactnavigation.org/docs/getting-started
+
+#### install
+```
+$ npm install @react-navigation/native
+```
+installing dependencies
+https://reactnavigation.org/docs/getting-started#installing-dependencies-into-an-expo-managed-project
+
+Navigation with stack navigator
+
+```
+$install 
+```
+
+### Others
+
+
+```
+$ expo install expo-constants
+```
+
+#### Send E-mail
+
+```
+$ expo install expo-mail-composer
+```
+
+#### formatos moeda
+
+```
+$ npm install intl
+```
+
+
+### Axios
+
+```
+$ npm install axios
+```
+
+<>/src/services/api.js
+```
+    baseURL: 'http://endereco:portAPI'
 ```
