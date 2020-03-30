@@ -168,13 +168,8 @@ history = useHistory();
 history.push('/rota');
 ```
 
-#### Client http
-```
-npm install axios
-```
 
-
-## Mobile
+## Frontend Mobile
 
 Expo global
 ```
@@ -222,14 +217,13 @@ $ expo install expo-constants
 $ expo install expo-mail-composer
 ```
 
-#### formatos moeda
-
+#### Internationalization API - currency
+// to Android
 ```
 $ npm install intl
 ```
 
-
-### Axios
+#### Frontend Client http
 
 ```
 $ npm install axios
